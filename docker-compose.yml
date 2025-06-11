@@ -1,7 +1,7 @@
 version: "3"
 services:
   postal:
-    image: ${POSTAL_IMAGE}
+    image: postalserver/postal:latest
     depends_on:
       - mariadb
     entrypoint: ["/docker-entrypoint.sh"]
